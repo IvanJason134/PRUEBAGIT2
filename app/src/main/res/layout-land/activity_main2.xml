@@ -1,0 +1,180 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!-- Background image -->
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/knit3"/>
+
+        <!-- Semi-transparent overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#45000000" />
+
+        <!-- Round rectangle overlay -->
+        <View
+            android:id="@+id/round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="620dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/round_rect"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#F6E6FF">
+
+
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Inicio de Sesión"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <!-- Your existing layout code wrapped in a ScrollView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:text="!Bienvenido!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_rounded_bg"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/txtusuario"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded"
+                            android:drawableLeft="@drawable/account"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="#AD84C3"
+                            android:hint="Usuario"
+
+                            android:padding="6dp"
+                            android:textColor="#000"
+
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/b"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/txtclave"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded"
+                            android:drawableLeft="@drawable/loc"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="#AD84C3"
+
+                            android:hint="Contraseña"
+                            android:inputType="textPassword"
+                            android:padding="6dp"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btningresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_rounded_bg"
+                    android:backgroundTint="#AD84C3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Iniciar Sesión" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

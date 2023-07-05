@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eliminar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background image -->
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/producto"/>
+
+        <!-- Semi-transparent overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#83B083B6" />
+
+        <!-- Round rectangle overlay -->
+        <View
+            android:id="@+id/round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="@drawable/round_rect"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <!-- Your existing layout code wrapped in a ScrollView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Eliminar Productos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/edittext_rounded_bg"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/m1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textSize="20sp"
+                            android:layout_above="@+id/txtid"
+                            android:layout_centerHorizontal="true"/>
+
+                        <EditText
+                            android:id="@+id/txtid"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/rounded"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="#AD84C3"
+                            android:textAlignment="center"
+                            android:hint="Introduce el ID"
+                            android:textColor="#000"
+                            android:textStyle="italic"
+                            android:layout_centerVertical="true"/>
+
+                        <ImageButton
+                            android:id="@+id/btnscanner"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            android:backgroundTint="#C0A3CF"
+                            android:background="@drawable/scanner"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/eliminar"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="70dp"
+                        android:layout_width="70dp"
+                        android:background="@drawable/remove"
+                        android:backgroundTint="#C0A3CF"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

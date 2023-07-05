@@ -1,0 +1,29 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="656dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/herramienta"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ami" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/mune"
+        android:name="com.example.examen_segundoparcial.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_menu" />
+
+</LinearLayout>
